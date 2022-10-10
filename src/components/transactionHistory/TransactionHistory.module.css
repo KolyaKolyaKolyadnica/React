@@ -1,0 +1,43 @@
+.transactionHistory {
+  text-align: center;
+  margin: 100px;
+  border-radius: 5px;
+  overflow: hidden;
+  border-collapse: collapse;
+  box-shadow: 3px 3px 8px rgb(186, 187, 187);
+
+  background-color: rgb(238, 245, 245);
+}
+thead {
+  background-color: rgb(110, 185, 210);
+  border-radius: 5px, 0px;
+  overflow: hidden;
+  color: rgb(238, 245, 245);
+}
+th {
+  text-transform: uppercase;
+}
+th,
+td {
+  width: 200px;
+  padding: 20px 10px;
+}
+tbody {
+  color: rgb(117, 117, 117);
+}
+.transactionHistory tbody tr:nth-of-type(even) {
+  background-color: rgb(211, 220, 220);
+}
+.transactionHistory thead th:nth-of-type(even) {
+  border-left: 1px solid rgb(238, 245, 245);
+  border-right: 1px solid rgb(238, 245, 245);
+}
+.transactionHistory tbody td:nth-of-type(even) {
+  border-left: 1px solid rgb(158, 158, 158);
+  border-right: 1px solid rgb(158, 158, 158);
+}
+.transactionHistory tbody td:nth-of-type(1) {
+  /* Так и не придумал как сделать 1ю колонку, как на примере, другим способом*/
+  text-align: left;
+  transform: translate(82px, 0);
+}

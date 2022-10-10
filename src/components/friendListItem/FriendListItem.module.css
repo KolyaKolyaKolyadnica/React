@@ -1,0 +1,29 @@
+.item {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  width: 200px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 3px 3px 8px rgb(130, 130, 130);
+}
+.status {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.online {
+  background-color: rgb(83, 218, 49);
+}
+.offline {
+  background-color: rgb(218, 49, 49);
+}
+.avatar {
+  margin-right: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.name {
+  color: black;
+}

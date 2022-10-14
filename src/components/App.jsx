@@ -3,14 +3,14 @@ import Profile from './profile/Profile';
 import user from './profile/user';
 
 import Statistics from './statistics/Statistics';
-import data from './statistics/data.json'
+import data from './statistics/data'
 
 
 import FriendList from "./friendList/FriendList"
-import friends from './friendList/friends.json';
+import friends from './friendList/friends';
 
 import TransactionHistory from './transactionHistory/TransactionHistory'
-import transactions from './transactionHistory/transactions.json'
+import transactions from './transactionHistory/transactions'
 
 export const App = () => {
   return (
@@ -23,12 +23,7 @@ export const App = () => {
       </Container>              
             
       <Container>
-        <Profile 
-              username={user.username}
-              tag={user.tag}
-              location={user.location}
-              avatar={user.avatar}
-              stats={user.stats}/>
+        <Profile user={user}/>
       </Container>
             
       <Container>

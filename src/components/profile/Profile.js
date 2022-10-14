@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types';
 import s from '../profile/Profile.module.css';
 
-function Profile({ username, tag, location, avatar, stats }) {
+function Profile({ user }) {
+  const { username, tag, location, avatar, stats } = user;
   return (
     <div className={s.container}>
       <div className={s.info}>

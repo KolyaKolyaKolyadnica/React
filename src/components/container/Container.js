@@ -9,5 +9,8 @@ export default Container;
 Container.propTypes = {
   // Так и не понял какой приходит тип в первом случаче!!!
 
-  children: PropTypes.any,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]).isRequired,
 };
